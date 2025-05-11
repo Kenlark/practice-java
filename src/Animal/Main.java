@@ -18,16 +18,33 @@ public class Main {
         String name2 = sc.nextLine();
 
         System.out.print("Enter the age of the turtle: ");
-        int age = sc.nextInt();
+        int age1 = sc.nextInt();
 
-        Tortue tortue = new Tortue(name2 , age);
+        Tortue tortue = new Tortue(name2 , age1);
 
         tortue.setName(name2);
-        tortue.setAge(age);
+        tortue.setAge(age1);
 
         tortue.manger();
         tortue.dormir();
         tortue.afficher();
+
+        sc.nextLine();
+
+        System.out.print("Enter the name of the dog: ");
+        String name3 = sc.nextLine();
+
+        System.out.print("Enter the age of the dog: ");
+        int age2 = sc.nextInt();
+
+        Chien chien = new Chien(name3, age2);
+
+        chien.setName(name3);
+        chien.setAge(age2);
+
+        chien.manger();
+        chien.dormir();
+        chien.afficher();
 
         sc.close();
     }
